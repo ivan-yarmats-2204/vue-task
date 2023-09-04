@@ -6,11 +6,11 @@ const props = defineProps({
 
 let selectedItem = props.defaultItem
 
-defineEmits(['selectedItem'])
+defineEmits(['selectItem'])
 </script>
 
 <template lang="pug">
-select(v-model="selectedItem" @change="$emit('selectedItem', selectedItem)")
+select(v-model="selectedItem" @change="$emit('selectItem', selectedItem)")
   option {{props.defaultItem}}
   option(v-for="item in props.items" :key="item") {{item}}
 </template>

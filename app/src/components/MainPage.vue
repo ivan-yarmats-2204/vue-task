@@ -40,9 +40,9 @@ div.app
   div(v-else)
     h1 {{dictionary.appName}}
     div.filters
-      course-filter(:default-item='allGoalsText' :items="goals" @selected-item="selectGoal")
-      course-filter(:default-item='allTopicsText' :items="topics" @selected-item="selectTopic")
-      course-filter(:default-item='allGradesText' :items="grades" @selected-item="selectGrade")
+      course-filter(:default-item='allGoalsText' :items="goals" @select-item="selectGoal")
+      course-filter(:default-item='allTopicsText' :items="topics" @select-item="selectTopic")
+      course-filter(:default-item='allGradesText' :items="grades" @select-item="selectGrade")
     course-list(
       :courses="courses.data"
       :selected-goal="selectedGoal"
