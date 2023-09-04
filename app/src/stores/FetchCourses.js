@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { getCourses } from '../service/ApiCourseService'
+
 export const useFetchCourses = defineStore('fetchCourses', () => {
   const isLoading = ref(false)
   const data = ref([])
