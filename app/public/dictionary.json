@@ -1,0 +1,10 @@
+{
+  "defaultFilterItems": {
+    "allGoals": "Все цели",
+    "allTopics": "Все темы",
+    "allGrades": "Все классы"
+  },
+  "loading": "Загрузка...",
+  "appName": "Приложение для фильтрации курсов",
+  "coursesNotFound": "Курсы не найдены"
+}
