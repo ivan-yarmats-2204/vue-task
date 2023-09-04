@@ -51,7 +51,6 @@ div.app
     )
 </template>
 
-
 <style lang="scss" scoped>
 .app {
   text-align: center;

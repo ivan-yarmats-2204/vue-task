@@ -8,6 +8,7 @@ export const useFetchCourses = defineStore('fetchCourses', () => {
   const fetchData = async () => {
     isLoading.value = true
     return await getCourses()
+
       .then(response => {
         data.value = response.data.data
         isLoading.value = false
